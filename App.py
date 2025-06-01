@@ -35,8 +35,8 @@ def summarize_pdf_by_page(file):
         return f"Error: {str(e)}"
 
 # Streamlit UI
-st.set_page_config(page_title="PDF Content Extractor with Gemini", layout="centered")
-st.title("📄 PDF Extractor using Gemini")
+st.set_page_config(page_title="PDF Content Extractor", layout="centered")
+st.title("📄 PDF Extractor")
 
 uploaded_files = st.file_uploader("Upload your PDFs", type=["pdf"], accept_multiple_files=True)
 
