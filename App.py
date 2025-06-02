@@ -26,7 +26,7 @@ def summarize_pdf_by_page(file):
         }
         # Ask Gemini to return content page by page
         message_parts = [
-            "Extract   the content from each page of the PDF. For each page, start with 'Page X' (where X is the page number), then the content. Separate each page with two newlines.Read line by line ans extract if menaing unmatched then understand the meaning and extract the content.Read all the content and extract the content accuartely",
+            "Extract   the content from each page of the PDF. For each page, start with 'Page X' (where X is the page number), then the content. Separate each page with two newlines.Read line by line ans extract if meaning unmatched then understand the meaning and extract the content.Read all the content and extract the content accuartely",
             pdf_blob
         ]
         response = model.generate_content(message_parts)
